@@ -1,0 +1,12 @@
+<# Duo_org.ps1 #>
+# define the default Duo Org/Instance you want to use, useful if you have more than one.
+[string]$DuoDefaultOrg = "prod"
+
+[Hashtable]$DuoOrgs = @{
+    prod = [Hashtable]@{
+            iKey  = [string]"<IKEY>"
+            sKeyEnc = [string]"SKEY_SECRET"
+            apiHost = [string]"API"
+            directory_key = [string]"XXXXXXXXXXXXXXXXXXXX"
+            }
+    }
